@@ -1,29 +1,17 @@
 import React from 'react';
-import { Dimensions, StyleSheet, Text, View } from 'react-native';
-import { ColorWheel } from 'react-native-color-wheel';
+import { StackNavigator } from 'react-navigation';
+
+import Home from './app/components/Home/Home'
+import Settings from './app/components/Settings/Settings'
 
 export default class App extends React.Component {
-  handleChange(color) {
-
-  }
   render() {
     return (
-      <View style={styles.container}>
-        <ColorWheel
-          initialColor="#ee0000"
-          onColorChange={this.handleChange.bind(this)}
-          style={{width: Dimensions.get('window').width}}
-          thumbStyle={{ height: 30, width: 30, borderRadius: 30}} />
-        </View>
-      );
-    }
+      <AppNavigator/>
+    );
   }
-
-  const styles = StyleSheet.create({
-    container: {
-      flex: 1,
-      backgroundColor: '#eee',
-      alignItems: 'center',
-      justifyContent: 'center',
-    },
-  });
+}
+const AppNavigator = StackNavigator({
+  Home: { screen: Home },
+  Settings: { screen: Settings },
+});

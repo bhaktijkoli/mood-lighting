@@ -1,8 +1,8 @@
 {
   "expo": {
-    "name": "Color Picker",
-    "description": "Color picker for react native",
-    "slug": "color-picker",
+    "name": "Mood Lighting",
+    "description": "Wifi Controlled Mood Lighthing",
+    "slug": "mood-lighting",
     "privacy": "public",
     "sdkVersion": "24.0.0",
     "platforms": ["ios", "android"],
@@ -15,7 +15,12 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
+      "bundleIdentifier": "com.bhaktij.moodlightning",
       "supportsTablet": true
+    },
+    "android": {
+      "package": "com.bhaktij.moodlightning",
+      "permissions" : [ "READ_INTERNAL_STORAGE" ],
     }
   }
 }
