@@ -11,7 +11,7 @@ var PIN_R = "mood_lighting_pin_r"
 var PIN_G = "mood_lighting_pin_g"
 var PIN_B = "mood_lighting_pin_b"
 
-class Home extends React.Component {
+class ColorWheel extends React.Component {
   static navigationOptions = { header: null };
   constructor(props) {
     super(props)
@@ -58,9 +58,6 @@ class Home extends React.Component {
           style={{flex: 1}}
           hideSliders={false}
         />
-        <Button transparent light block style={{marginBottom:10}} onPress={e=>this.props.navigation.navigate('Settings')}>
-          <Icon name='settings' />
-        </Button>
       </View>
     );
   }
@@ -77,4 +74,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Home
+export default ColorWheel

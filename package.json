@@ -8,6 +8,7 @@
     "native-base": "^2.3.9",
     "react": "16.2.0",
     "react-native": "https://github.com/expo/react-native/archive/sdk-24.0.0.tar.gz",
+    "react-native-color-picker": "^0.4.0",
     "react-native-color-wheel": "^0.1.4",
     "react-navigation": "^1.2.1"
   }
